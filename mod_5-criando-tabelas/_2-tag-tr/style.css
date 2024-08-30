@@ -1,0 +1,8 @@
+
+table tr:nth-child(even) {
+    background-color: #d0ced3;
+}
+table tr:hover td {
+    background-color: #a8a8ac;
+}
+

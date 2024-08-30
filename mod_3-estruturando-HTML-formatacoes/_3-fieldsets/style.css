@@ -1,0 +1,24 @@
+body {
+    background-color: #171414;
+    color: #F6F4F3;
+}
+
+.row {
+    margin: 5px;
+}
+label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+fieldset {
+    border: 2px solid #E1FF30;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+legend {
+    color: #E1FF30;
+}

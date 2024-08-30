@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fielset</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label for="nome">Nome:</label><input id="nome" type="text">
+            <label for="email">E-mail:</label><input id="email" type="text">
+        </div>
+
+        <div class="row">
+            <label for="profissao">Profissão:</label><input id="profissao" type="text">
+            <label for="empresa">Empresa:</label><input id="empresa" type="text">
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Endereço</legend>
+        <div class="row">
+            <label for="endereco">Endereço:</label><input id="endereco" type="text">
+            <label for="numero">Número</label><input id="numero" type="text" style="width: 30px" width="10">
+        </div>
+
+        <div class="row">
+            <label for="bairro">Bairro:</label><input id="bairro" type="text">
+        </div>
+
+        <div class="row">
+            <label for="cidade-uf">Cidade/UF</label><input id="cidade-uf" type="text">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações de Contato</legend>
+        <div class="row">
+            <label for="telefone">Telefone:</label><input id="telefone" type="text">
+            <label for="whatsapp">Whatsapp</label><input id="whatsapp" type="text">
+        </div>
+
+        <div class="row">
+            <label for="linkedin">Linkedin</label><input id="linkedin" type="text">
+            <label for="github">Github:</label><input id="github" type="text">
+        </div>
+    </fieldset>
+
+    <div class="row">
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar formulário</button>
+    </div>
+</body>
+</html>

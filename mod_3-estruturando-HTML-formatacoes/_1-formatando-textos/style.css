@@ -1,0 +1,19 @@
+
+body {
+    margin: 20px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+pre {
+    max-width: 500px;   /* Largura máxima */
+    overflow: auto;     /* Adiciona barras de rolagem quando o conteúdo exceder os limites */
+    white-space: pre-wrap; /* Quebra de linha automática dentro do conteúdo */
+    word-wrap: break-word; /* Quebra palavras longas para não estourarem o contêiner */
+  }

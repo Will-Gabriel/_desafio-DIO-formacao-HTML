@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários< cadastro e login</title>
+</head>
+<body>
+    <header>
+        <h1>Entendendo formulários</h1>
+    </header>
+
+    <div>
+        <div id="form-login">
+            <form name="login" autocomplete="on" method="post" action="#" target="_blank">
+                <div class="div-usuario">
+                    <label for="seu-usuario">Usuário:</label>
+                    <input id="seu-usuario" name="seu-usuario" type="text" maxlength="50" required placeholder="usuário ou email...">
+                </div>
+                
+                <div class="div-senha">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" name="senha" type="password" required minlength="8" maxlength="20">
+                </div>
+    
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <br><hr><br>
+        
+        <div id="form-cadastro">
+            <form name="cadastro" onclick="alert('Cadastro realizado!')" autocomplete="on" method="post" action="#" target="_blank">
+                <div class="div-nome">
+                    <label for="nome-completo">Nome completo:</label>
+                    <input id="nome-completo" name="nome-completo" type="text" maxlength="50" required placeholder="insira seu nome aqui...">
+                </div>
+                
+                <div class="div-senha">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" name="senha" type="password" required minlength="8" maxlength="20">
+                </div>
+
+                <div class="div-confirmar-senha">
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input id="confirmar-senha" name="confirmar-senha" type="password" required minlength="8" maxlength="20">
+                </div>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

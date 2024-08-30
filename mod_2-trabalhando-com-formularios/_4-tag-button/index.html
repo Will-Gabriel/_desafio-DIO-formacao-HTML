@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button e seus Tipos</title>
+</head>
+<body>
+    <header>
+        <h1>Button e seus Tipos</h1>
+    </header>
+
+    <div id="form-login">
+        <form onsubmit="" name="login" autocomplete="on" method="post" action="#" target="_blank">
+
+            <div class="section-login">
+                <label for="seu-usuario">Usuário*</label> <br>
+                <input id="seu-usuario" name="seu-usuario" type="text" maxlength="50" required placeholder="usuário ou email..."> <br><br>
+                
+                <label for="senha">Senha*</label> <br>
+                <input id="senha" name="senha" type="password" required minlength="8" maxlength="20"> <br><br>
+
+                <button type="submit">Entrar</button>
+            </div>
+            
+            <br><hr>
+
+            <div class="botoes">
+                <h2>Alguns tipos de botões</h2>
+
+                <button type="submit">Enviar</button> <br><br>
+                
+                <button type="submit">Entrar</button> <br><br>
+                
+                <button type="reset">Limpar</button> <br><br>
+                
+                <button type="button" onclick="alert('cliquei aqui!');">Clicável</button> <br><br>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
