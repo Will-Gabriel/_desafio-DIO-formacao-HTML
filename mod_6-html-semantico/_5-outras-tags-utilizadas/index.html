@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Tags Estruturais e Formatação</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Página principal com menu no header</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <!-- <li><a href="tel:+5549999999999">Contato</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div>
+            <div>
+                <h2>Breve explicação sobre outras Tags muito utilizadas</h2>
+            </div>
+            <ul>
+                <li><p><strong>&lt;blockquote&gt;</strong>:</p>
+                    <ul>
+                        <li><strong>O que é</strong>: Um elemento semântico que define uma citação longa ou em bloco, geralmente de uma fonte externa.</li>
+                        <li><strong>Para que serve</strong>: Envolve trechos de texto que estão sendo citados de outra fonte. O conteúdo é geralmente indentado ou estilizado para indicar que é uma citação. Pode opcionalmente incluir o atributo cite para indicar a origem da citação.</li>
+                    </ul>
+                    <pre>
+                      &lt;blockquote cite="http://exemplo.com/fonte"&gt;
+                        "Este é um exemplo de citação longa retirada de uma fonte externa."
+                      &lt;/blockquote&gt;
+                    </pre>
+                </li>
+
+                <li><p><strong>&lt;q&gt;</strong>:</p>
+                    <ul>
+                        <li><strong>O que é</strong>: Um elemento semântico que define uma citação curta ou inline.</li>
+                        <li><strong>Para que serve</strong>: Usado para incluir citações curtas dentro do fluxo de texto. O conteúdo dentro de &lt;q&gt; é geralmente renderizado com aspas (aspas duplas ou simples, dependendo da configuração do idioma).</li>
+                    </ul>
+                    <pre>
+                      &lt;p&gt;"Este é um exemplo de &lt;q&gt;citação curta&lt;/q&gt;."&lt;/p&gt;
+                    </pre>
+                </li>
+
+                <li><p><strong>&lt;figure&gt;</strong>:</p>
+                    <ul>
+                        <li><strong>O que é</strong>: Um elemento semântico usado para agrupar conteúdo independente, como imagens, diagramas, gráficos, códigos, ou ilustrações.</li>
+                        <li><strong>Para que serve</strong>: Serve para associar uma mídia (imagem, gráfico, etc.) com uma legenda opcional. Geralmente é usado para conteúdo que pode ser referenciado no texto, mas também pode ser separado do texto principal sem perder o sentido.</li>
+                    </ul>
+                    <pre>
+                        &lt;figure&gt;
+                            &lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;
+                            &lt;figcaption&gt;Legenda da imagem&lt;/figcaption&gt;
+                        &lt;/figure&gt;
+                    </pre>
+                </li>
+
+                <li><p><strong>&lt;figcaption&gt;</strong>:</p>
+                    <ul>
+                        <li><strong>O que é</strong>: Um elemento semântico que define a legenda ou descrição de um conteúdo dentro de &lt;figure&gt;</li>
+                        <li><strong>Para que serve</strong>: É usado para fornecer uma descrição ou explicação do conteúdo contido em &lt;figure&gt;. Deve ser inserido dentro do elemento &lt;figure&gt;, normalmente antes ou depois do conteúdo da mídia.</li>
+                    </ul>
+                    <pre>
+                        &lt;figure&gt;
+                            &lt;img src="diagrama.jpg" alt="Diagrama de exemplo"/&gt;
+                            &lt;figcaption&gt;Este é o diagrama que ilustra o processo.&lt;/figcaption&gt;
+                        &lt;figure&gt;
+                    </pre>
+                </li>
+
+                <li><p><strong>&lt;picture&gt;</strong>:</p>
+                    <ul>
+                        <li><strong>O que é</strong>: Um elemento que oferece uma maneira avançada de trabalhar com imagens responsivas e de diferentes formatos.</li>
+                        <li><strong>Para que serve</strong>: Permite definir várias versões de uma imagem para serem carregadas dependendo de certos critérios, como a largura da tela (responsividade) ou o tipo de imagem suportado pelo navegador. Dentro de &lt;picture&gt;, usa-se o &lt;source&gt; para definir diferentes imagens e o &lt;img&gt; como fallback.</li>
+                    </ul>
+                    <pre>
+                        &lt;picture&gt;
+                            &lt;source media="(min-width: 800px)" srcset="imagem-grande.jpg"&gt;
+                            &lt;source media="(min-width: 400px)" srcset="imagem-media.jpg"&gt;
+                            &lt;img src="imagem-pequena.jpg" alt="Imagem responsiva"&gt;
+                        &lt;/picture&gt;
+                    </pre>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <h2>Rodapé</h2>
+        <p>&copy; Wilian Gabriel</p>
+    </footer>
+</body>
+</html>
