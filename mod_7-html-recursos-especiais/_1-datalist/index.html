@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Datalists</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entendendo Datalist</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>Select</h2>
+
+            <select name="" id="">
+                <option value="">Selecione um navegador</option>
+                <option value="chrome">Google Chrome</option>
+                <option value="brave">Brave</option>
+                <option value="edge">Microsoft Edge</option>
+                <option value="safari">Safari</option>
+                <option value="opera">Opera</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <h2>Datalist</h2>
+
+            <input list="browsers" type="search" name="search">
+            <datalist id="browsers">
+                <option value="chrome">Google Chrome</option>
+                <option value="brave">Brave</option>
+                <option value="edge">Microsoft Edge</option>
+                <option value="safari">Safari</option>
+                <option value="opera">Opera</option>
+            </datalist>
+
+            <input list="browsers2" type="search" name="search">
+            <datalist id="browsers2">
+                <option>Google Chrome</option>
+                <option>Brave</option>
+                <option>Microsoft Edge</optione>
+                <option>Safari</option>
+                <option>Opera</option>
+            </datalist>
+        </div>
+    </main>
+</body>
+</html>

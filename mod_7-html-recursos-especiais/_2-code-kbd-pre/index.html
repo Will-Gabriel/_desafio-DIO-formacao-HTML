@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Code, Kbd e Pre</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+        /* kbd {
+            border: 1px solid #000000;
+            padding: 0px 4px;
+            border-radius: 2px;
+        } */
+        code {
+            margin: 1px solid #000;
+            padding: 0px 4px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 4px;
+        }
+        kbd {
+            margin: 1px solid #000;
+            padding: 0px 4px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #e9e9e9f2;
+            color: #000;
+        }
+        pre > p {
+            font-style: italic;
+            color: #525151;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entendendo as Tags Code, Kbd e Pre</h1>
+    </header>
+
+    <main>
+        <div>
+            <h2>Tag Code</h2>
+            <p>Utilizada para representar fragmentos de código em linha. O texto dentro desta tag geralmente é exibido em uma fonte monoespaçada, mas não aplica nenhum estilo adicional como espaçamento.</p>
+            <pre>
+                <p>// Exemplo de uso:</p>
+                Use a tag &lt;code&gt;&lt;div&gt;&lt;/code&gt; para criar uma divisão.
+            </pre>
+            <p>Resultado: Use a tag <code>&lt;div&gt;</code> para criar uma divisão.</p>
+        </div>
+        <hr>
+
+        <div>
+            <h2>Tag KBD</h2>
+            <p>Representa uma entrada de teclado, como uma combinação de teclas que o usuário deve pressionar. O texto dentro desta tag também é exibido em uma fonte monoespaçada.</p>
+            <pre>
+                <p>// Exemplo de uso:</p>
+                Para copiar esta informação, pressione &lt;kbd&gt;CTRL&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;
+            </pre>
+            <p>Resultado: Para copiar esta informação, pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+        </div>
+        <hr>
+        
+        <div>
+            <h2>Tag Pre</h2>
+            <p>Usada para exibir texto pré-formatado. O conteúdo dentro da tag &lt;pre&gt; mantém os espaços em branco e quebras de linha, sendo exibido em uma fonte monoespaçada. É útil para exibir blocos de código ou texto que requerem uma formatação específica.</p>
+            <pre>
+                <p>// Exemplo de uso:</p>
+                &lt;pre&gt;
+                    .minha-div {
+                    background-color: #000000;
+                    color: #ffffff;
+                    padding: 2px 4px;
+                    border-radius: 2px;
+                    }
+                &lt;/pre&gt;
+                
+                <p>// Exemplo de uso com code:</p>
+                &lt;pre&gt;
+                    &lt;code&gt;
+                    .minha-div {
+                        background-color: #000000;
+                        color: #ffffff;
+                        padding: 2px 4px;
+                        border-radius: 2px;
+                    }
+                    &lt;/code&gt;
+                &lt;/pre&gt;
+            </pre>
+        </div>
+    </main>
+</body>
+</html>
