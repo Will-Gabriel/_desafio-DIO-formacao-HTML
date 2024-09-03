@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Mark e Javascript</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entendendo Mark e Javascript</h1>
+    </header>
+
+    <main>
+        <div>
+            <label for="busca">
+                <span>Buscar palavra no texto:</span><br>
+                <input id="busca" type="text">
+            </label>
+        </div>
+        <div>
+            <p id="descricao">HTML (HyperText Markup Language) é a linguagem de marcação fundamental utilizada para criar e estruturar o conteúdo na web. Surgiu no início da década de 1990, desenvolvida por Tim Berners-Lee, e tornou-se o alicerce sobre o qual a internet moderna é construída. HTML não é uma linguagem de programação, mas sim uma linguagem de marcação, o que significa que ela utiliza elementos ou tags para definir a estrutura e apresentação do conteúdo em uma página web.</p>
+
+            <p>Cada página web que você visita na internet é composta por código HTML, que define desde os títulos, parágrafos e imagens, até links, formulários e tabelas. As tags HTML são delimitadas por colchetes angulares &lt; &gt; e geralmente vêm em pares: uma tag de abertura &lt;tag&gt; e uma de fechamento &lt;/tag&gt;, com o conteúdo colocado entre elas. Por exemplo, a tag &lt;p&gt; é usada para definir um parágrafo, enquanto a tag &lt;a&gt; é usada para criar hyperlinks, que conectam diferentes páginas ou recursos.</p>
+
+            <p>Além das tags básicas, HTML evoluiu ao longo dos anos para incluir uma ampla gama de funcionalidades que melhoram a acessibilidade, a semântica e a interatividade das páginas. Com o HTML5, lançado em 2014, foram introduzidos novos elementos como &lt;article&gt;, &lt;section&gt;, e &lt;header&gt;, que permitem uma estruturação mais semântica do conteúdo, tornando as páginas mais fáceis de entender tanto para os humanos quanto para os motores de busca.</p>
+            
+            <p>Outro aspecto fundamental do HTML é sua integração com CSS (Cascading Style Sheets) e JavaScript. Enquanto o HTML define a estrutura e o conteúdo de uma página, o CSS cuida da apresentação visual, e o JavaScript adiciona interatividade e dinamismo. Essa combinação de HTML, CSS e JavaScript é essencial para a criação de websites modernos e responsivos, que funcionam bem em uma variedade de dispositivos, desde desktops até smartphones.</p>
+            
+            <p>Por fim, a simplicidade e flexibilidade do HTML tornam-no acessível para iniciantes, ao mesmo tempo em que oferece poder e profundidade suficientes para profissionais experientes criarem experiências web ricas e interativas. É uma tecnologia que continua evoluindo, mas que permanece no coração da web, permitindo que milhões de pessoas criem e compartilhem conteúdo globalmente.</p>
+        </div>
+    </main>
+
+    <script>
+        var searchField = document.getElementById('busca');
+        var descriptionObject = document.getElementById('descricao');
+        var textToSearch = descriptionObject.innerHTML;
+
+        function performSearch(busca) {
+            const regex = new RegExp(`(${busca})(?!(.(?!mark))*</mark>)+`, 'ig');
+            const ocurrences = textToSearch.match(regex);
+            descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`);
+        }
+
+        searchField.addEventListener('keyup', (e) => performSearch(e.target.value));
+    </script>
+</body>
+</html>
